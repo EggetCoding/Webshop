@@ -1,16 +1,46 @@
-{
-    "products":[
-        {
-            "productName": "RTX 3080",
-            "productPrice": 699,
-            "productImage": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/graphics-cards/30-series/rtx-3080/rtx-3080-gallery-01.jpg",
-            "productDescription": "The GeForce RTX 3080 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
-        },
-        {
-            "productName": "RTX 3090",
-            "productPrice": 1499,
-            "productImage": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/graphics-cards/30-series/rtx-3090/rtx-3090-gallery-01.jpg",
-            "productDescription": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
-        }
-    ]
-}
+
+[
+    {
+        "id":0,
+        "name": "RTX 3090",
+        "price": 1499,
+        "image": "images/FoldComputer.jpg",
+        "description": "The GeForce RTX 3080 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+    },
+    {
+        "id":1,
+        "name": "RTX 3080",
+        "price": 699,
+        "image": "images/FoldComputer.jpg",
+        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+    },
+    {
+        "id":2,
+        "name": "RTX 2090",
+        "price": 499,
+        "image": "images/FoldComputer.jpg",
+        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+    },
+    {
+        "id":3,
+        "name": "RTX 2080",
+        "price": 399,
+        "image": "images/FoldComputer.jpg",
+        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+    },
+    {
+        "id":4,
+        "name": "GTX 1080",
+        "price": 299,
+        "image": "images/FoldComputer.jpg",
+        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+    },
+    {
+        "id":5,
+        "name": "GTX 1050",
+        "price": 199,
+        "image": "images/FoldComputer.jpg",
+        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+    }
+
+]
