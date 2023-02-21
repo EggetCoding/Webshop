@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qcz0pve.css">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+
+    <div class="navbarColorWhite" id="navbar">
+
+        <ul>
+
+            <li>
+
+                <button class="navButtons">
+
+                    <a href="index.html" id="navbarText" class="navbarTextColor1"> Home </a>
+
+                </button>
+            </li>
+            <li>
+
+                <button class="navButtons">
+
+                    <a href="ShopGPU.html" id="navbarText" class="navbarTextColor1">Shop</a>
+
+                </button> 
+            </li>
+            <li>
+
+                <button class="navButtons">
+
+                    <a href="about.html" id="navbarText" class="navbarTextColor1">About</a>
+
+                </button>             
+
+            </li>
+            
+        </ul>
+
+        <a href="cart.html">
+            <div class="carticonBlack"></div>
+        </a>
+    </div>
+
+    <ol id="demo" style=" display: flex; width: 40%; flex-direction: column; padding-top: 50px;"></ol>
+
+
+    <script>
+        var list = document.getElementById('demo');
+
+        var totalCost = 0;
+
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        console.log(cart);
+
+
+        
+
+        for (i = 0; i < cart.length; i++) {
+            console.log(totalCost);
+            let li = document.createElement("li");
+            
+
+            li.classList.add("cartItems");
+
+            var image = document.createElement("img");
+            image.classList.add("cartImage");
+            
+            image.setAttribute("src", cart[i].image);
+            li.appendChild(image);
+
+            let text = document.createElement("div");
+            text.innerText = cart[i].name;
+            li.appendChild(text);
+
+            let cost = document.createElement("div");
+            cost.innerText = cart[i].price + "€";
+            li.appendChild(cost);
+
+            totalCost += cart[i].price;
+
+            list.appendChild(li);
+        }
+
+        let li = document.createElement("li");
+        li.innerText = "Price: " + totalCost + "€";
+        li.classList.add("totalValue");
+
+        const button = document.createElement('button')
+        button.classList.add("purchaseButton");
+        button.innerHTML = "Purchase";
+
+        button.addEventListener('click', () => {
+            alert('Thank you for your purchase!')
+            localStorage.clear();
+            window.location='cart.html';
+        })
+
+        li.appendChild(button)
+
+
+        list.appendChild(li);
+    </script>
+    
+</body>
+</html>

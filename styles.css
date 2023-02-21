@@ -327,6 +327,113 @@ li{
     background-image: url("images/CodeOnMonitor.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgb(2, 8, 0);
+}
+
+.singleimg{
+    width: 100%;
+    height: 80%;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.holder{
+    background-color: black;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.holder h1{
+    margin: 10px;
+}
+
+.holder button{
+    
+    width: 100px;
+    height: 30px;
+    background-color: rgb(162, 244, 40);
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+    color: white;
+    font-size: 20%;
+    font-weight: bold;
+    text-align:left;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    
+}
+
+.cartItems{
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+}
+
+.cartItems div{
+    text-align: left;
+}
+
+.cartImage{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+
+}
+
+.totalValue{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+}
+
+.purchaseButton{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.purchaseButton :hover{
+    background-color: rgb(65, 65, 65);
 }
 
 

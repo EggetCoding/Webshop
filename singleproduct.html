@@ -25,7 +25,7 @@
 
                 <button class="navButtons">
 
-                    <a href="#scrollSection1" id="navbarText" class="navbarTextColor1">Shop</a>
+                    <a href="ShopGPU.html" id="navbarText" class="navbarTextColor1">Shop</a>
 
                 </button> 
             </li>
@@ -41,23 +41,123 @@
             
         </ul>
 
-        <div class="carticonBlack"></div>
+        <a href="cart.html">
+            <div class="carticonBlack"></div>
+        </a>
     </div>
 
     
     
     <div class="singlecontainer">
-        <h1>
-            hej
-        </h1>
-        <h1>
-            kehj
-        </h1>
+        <div class="holder">
+            <img src="" alt="" id="img" class="singleimg" style="width: 100%; height: 30vh;">
+
+            
+            <h1 id="name">
+                Name
+            </h1>
+
+            <h1 id="cost">
+                Cost
+            </h1>
+
+            <button onclick="AddProduct()">
+                Buy
+            </button>
+        </div>
+        
+        
+        <div style="width: 50%; height: 20vh; display: flex; flex-direction: column;">
+            <h1>
+                About
+            </h1>
+            <p id="about">
+                About
+            </p>
+
+        </div>
+        
+        
 
     </div>
 
 
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        
+
+        idNumber = Number(getParameter("id"));
+        console.log(typeof(idNumber));
+
+        SingleProductShow(idNumber)
+
+        
+        
+        function AddProduct(){
+
+            //cartid = JSON.parse(localStorage.getItem("cart")) || [];
+
+            let parameters = new URLSearchParams(window.location.search);
+            id = parameters.get("id");
+
+            console.log(id);
+
+            fetch("products.json")
+            .then(response => response.json())
+            .then(product => {
+            const productsId = product[id];
+            console.log(typeof(cart));
+
+
+            cart.push({
+                id: productsId.id,
+                name: productsId.name,
+                price: productsId.price,
+                image: productsId.image,
+                description: productsId.description,
+            });
+        
+            
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            console.log(cart);
+            VisualAlert();
+        });
+        }
+
+        function VisualAlert(){
+            alert("Product added to cart");
+        }
+
+        function getParameter(parameter){
+            let parameters = new URLSearchParams(window.location.search);
+            return parameters.get(parameter);
+        }
+
+        
+
+        function SingleProductShow(idForProduct){
+            fetch("products.json")
+            .then(response => response.json())
+            .then(data => {
+            const products = data[idForProduct];
+            console.log(idForProduct);
+
+            const productcontainer = document.querySelector(".singlecontainer");
+            productcontainer.querySelector("#cost").innerHTML = products.price + " €";
+            productcontainer.querySelector("#name").innerHTML = products.name; 
+            productcontainer.querySelector("#img").src = products.image;    
+            productcontainer.querySelector("#about").innerHTML = products.description; 
+        });
+
     
+
+        
+
+    }
+
+    </script>
 
 </body>
 </html>

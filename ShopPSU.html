@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qcz0pve.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbarColorWhite" id="navbar">
+
+        <ul>
+
+            <li>
+
+                <button class="navButtons">
+
+                    <a href="index.html" id="navbarText" class="navbarTextColor1"> Home </a>
+
+                </button>
+            </li>
+            <li>
+
+                <button class="navButtons">
+
+                    <a href="ShopGPU.html" id="navbarText" class="navbarTextColor1">Shop</a>
+
+                </button> 
+            </li>
+            <li>
+
+                <button class="navButtons">
+
+                    <a href="about.html" id="navbarText" class="navbarTextColor1">About</a>
+
+                </button>             
+
+            </li>
+            
+        </ul>
+            <a href="cart.html">
+                <div class="carticonBlack"></div>
+            </a>
+        
+    </div>
+    
+    <div class="container">
+        <div class="item" >
+            <div class="productcontainer">
+                <div class="productholder">
+                    <div style="width: 100%; height: 220px;">
+                        <img src="" alt="" id="productimg10" class="proimg">
+                    </div>
+                    <div id="productinfo">
+                        <h1 id="productname10"></h1>
+                        <h2 id="productprice10"></h2>
+                        <button>
+                            <a href="singleproduct.html?id=10" >View</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="productholder">
+                    <div style="width: 100%; height: 220px;">
+                        <img src="" alt="" id="productimg11" class="proimg">
+                    </div>
+                        <div id="productinfo">
+                            <h1 id="productname11"></h1>
+                            <h2 id="productprice11"></h2>
+                            <button>
+                                <a href="singleproduct.html?id=11">View</a>
+                            </button>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        fetch("products.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            for (i = 10; i < 12; i++) {
+                const products = data[i];
+                console.log(i);
+
+                const productcontainer = document.querySelector(".container");
+                productcontainer.querySelector("#productname" + i).innerHTML = products.name;
+                productcontainer.querySelector("#productprice" + i).innerHTML = products.price + "€";
+                productcontainer.querySelector("#productimg" + i).src = products.image;
+            }
+            
+        });
+
+
+    </script>
+
+    
+    
+</body>
+</html>

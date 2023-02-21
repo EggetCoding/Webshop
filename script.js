@@ -1,3 +1,5 @@
+let idForProduct = 0;
+
 function changeBg(){
     var navbar = document.getElementById("navbar");
     var navbarText = document.getElementById("navbarText");
@@ -23,3 +25,12 @@ function changeBg(){
 }
 
 window.addEventListener("scroll", changeBg);
+
+
+
+window.onload = getParameter();
+
+function getParameter(parameter){
+    let parameters = new URLSearchParams(window.location.search);
+    return parameters.get(parameter);
+}
