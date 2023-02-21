@@ -247,12 +247,13 @@ li{
 .productholder{
     width: 250px;
     height: 200px;
-    background-color: gray;
+    background-color: black;
     padding-bottom: 200px;
 }
 
 #productinfo{
-    height: 180px; background-color: white; 
+    height: 180px; 
+    background-color: white; 
     line-height: 50px; 
     font-size: 15px; 
     font-family: 'ocr-a-std',monospace;
