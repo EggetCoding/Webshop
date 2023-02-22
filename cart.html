@@ -83,12 +83,15 @@
             cost.innerText = cart[i].price + "€";
             li.appendChild(cost);
 
-            const button = document.createElement('button')
+            let button = document.createElement('button')
             button.classList.add("purchaseButton");
+            button.classList.add(i);
             button.innerHTML = "Remove";
 
+            console.log(typeof(Number(button.classList[1])));
+
             button.addEventListener('click', () => {
-                cart.pop(i);
+                cart.splice(Number(button.classList[1]), 1);
 
                 localStorage.setItem("cart", JSON.stringify(cart));
 
