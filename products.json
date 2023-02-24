@@ -5,42 +5,42 @@
         "name": "RTX 3090",
         "price": 1499,
         "image": "images/3090.png",
-        "description": "The GeForce RTX 3080 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+        "description": "The GeForce RTX 3090 is a powerfull graphics card that could handle everything you want it to"
     },
     {
         "id":1,
         "name": "RTX 3080",
         "price": 699,
         "image": "images/3080.jpg",
-        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+        "description": "The GeForce RTX 3080 is a great choice when it comes to gaming. It has a great price to performance."
     },
     {
         "id":2,
         "name": "RTX 2090",
         "price": 499,
         "image": "images/2090.png",
-        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+        "description": "The GeForce RTX 2090 is what you want if you are going to show pictures or movies in super high quality. This card is a must then."
     },
     {
         "id":3,
         "name": "RTX 2080",
         "price": 399,
         "image": "images/2080.jfif",
-        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+        "description": "The GeForce RTX 2080 is a great choice for high to mid end builds of all sorts of computers."
     },
     {
         "id":4,
         "name": "GTX 1080",
         "price": 299,
         "image": "images/1080.png",
-        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+        "description": "Even for the Geforce GTX 1080 elderness it's still being used til this day. This indicates the good price and preformance for this product."
     },
     {
         "id":5,
         "name": "GTX 1050",
         "price": 199,
         "image": "images/1050.jpg",
-        "description": "The GeForce RTX 3090 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. It’s built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and superfast G6X memory for an amazing gaming experience."
+        "description": "The Geforce GTX 1050 has a rough time with its preformance but for the price it's well worth it."
     },
 
     {
@@ -48,7 +48,7 @@
         "name": "i9 9900k",
         "price": 549,
         "image": "images/i9.jfif",
-        "description": ""
+        "description": "The intel Core i9 9900k is a great choice for a high end build. It has a great range for all types of builds and is a great choice for gaming or redering."
     },
 
     {
@@ -56,21 +56,21 @@
         "name": "i7 9700k",
         "price": 349,
         "image": "images/i7.jfif",
-        "description": ""
+        "description": "The intel Core i7 9700k is a good choice for gaming. You get good value for the price and it is a great choice for a mid range build."
     },
     {
         "id":8,
         "name": "7 5800x ",
         "price": 229,
         "image": "images/Ryzen7.jfif",
-        "description": ""
+        "description": "If you want an upgrade for you Amd Ryzen processors the Ryzen 7 5800x is a great choice."
     },
     {
         "id":9,
         "name": "5 5600x",
         "price": 579,
         "image": "images/Ryzen5.jfif",
-        "description": ""
+        "description": "The Amd Ryzen 5 5600x is a great choice for a low to mid range build. It has good preformance and a great price."
     },
 
     {
@@ -78,14 +78,14 @@
         "name": "Corsair 1000w",
         "price": 179,
         "image": "images/PSU1000.jfif",
-        "description": "Gold"
+        "description": "If you want an upgrade for you powersupply the corsair 100w gold is a great choice."
     },
     {
         "id":11,
         "name": "Corsair 850w",
         "price": 109,
         "image": "images/PSU850.jfif",
-        "description": "Bronze"
+        "description": "The corsair 850w is a bronze version of the power supplies in the series. It is a great choice for a mid range build."
     }
 
 
