@@ -250,6 +250,19 @@ li{
     height: 200px;
     background-color: black;
     padding-bottom: 200px;
+    
+}
+.proimg{
+    width: 100%;
+    height: 220px;
+}
+.divholder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #productinfo{
@@ -311,11 +324,9 @@ li{
 
 }
 
-.proimg{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 200px;
-}
+
+
+
 
 
 .singlecontainer{
@@ -372,13 +383,13 @@ li{
 
 #about{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: top;
     padding: 10px;
     width: 100%;
     height: 80%;
     color: white;
-    font-size: 20%;
+    font-size: 12px;
     font-weight: bold;
     text-align:left;
     border: solid;
